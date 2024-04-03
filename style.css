@@ -20,7 +20,8 @@ header{
     position: absolute;
     top: 4%;
     left: 90%;
-    width: 8%; 
+    width: 8%;
+    justify-content: space-between;
 }
 .login-register button{
     width: 100%;
@@ -81,6 +82,7 @@ header{
 }
 main {
     background-color: rgb(235, 235, 235);
+    padding-bottom: 2%;
 }
 .imagem-toda{
     width: 100%;
@@ -94,81 +96,115 @@ main {
     margin-top: -14%;
     position: absolute;
 }
+#MuralReceitaButton {
+    width: 100%;
+    height: auto;
+    margin-top: -1.5%;
+    display: flex;   
+}
+#MuralReceitaButton button:hover{   
+    background-color:  #ff8717;
+    color: white;
+}
 .mural,
 .receita {
+    width: 20%;
+    height: auto;
     display: inline-block;
-    justify-content: space-around;
-    padding-top: 0%;
+    justify-content: space-between;
     border-top: none;
-    margin-top: 0%;
-    margin-left: 15%;
+    margin-left: 20.5%;
+    background-color: #ee7300;
+    color: black;
+    cursor: pointer;
+    font-size: 38px;
+    border-top: none;
 }
 .mural{
-    background-color: #ee7300;
-    color: black;
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 0px;
-    width: 150px;
-    height: 25px;
+
 }
 .receita {
-    background-color: #ee7300;
-    color: black;
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 0px;
-    width: 150px;
-    height: 25px;
 }
 #sugestao{
     display: flex;
     text-align: center;
     width: 100%;
+    padding-left: 1%;
     justify-content: center;
-    padding-right: 8%;
     height: 2%;
+    text-decoration: underline;
+    font-size: 300%;
+}
+.duasListas{
+    background-color: rgb(235, 235, 235);
+    width: 80%;
+    padding: 0;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 13%;
 }
 #listabolo, #listapao {
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0px 10px 8px lightgray;
     padding: 0px;
-    width: 23%;
-    background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: 600px;
-    box-shadow: -8px 8px 5px lightgray; 
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 #listabolo{
-    paddding: 0px;
-    margin-left: -14%;
-    width: 500px;
-    background-color: white;
-    align-items: center;
+    width: 22%;
+    display: flex;
+    align-items: left;
+    margin-left: 19%;
+}
+#listabolo a{
+    text-decoration: underline;
+    color: black;
 }
 #listapao{
-    border: 2px solid;
-    border-color:;
-    background-color: white;
-    paddding: 0px;
-    margin-left: 900px;
-    margin-top: -321px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: center;
+    width: 21.5%;
+    padding: 0;
+    margin-right: 10%;
+    margin-left: 60%;
+    margin-top: -17.8%;
 }
-.imgpao{
-    width: 250px;
+#listapao a{
+    text-decoration: underline;
+    color: black;
 }
 .imgbolo{
-    width:250px;
+    width: 99.2%;
+    padding-top: 0.8%;
+    padding-left: 0.8%;
+    transition: transform .5s;
+
+}
+.imgbolo:hover{
+    transform:scale(1.1,1.1);
+
+}
+.imgpao{
+    width: 99.2%;
+    padding-top: 0.8%;
+    padding-left: 0.8%;
+    transition: transform .5s;
+}
+.imgpao:hover{
+    transform:scale(1.1,1.1);
+}
+.descricaoBolo, .descricaoPao{
+    margin-top: 0.7%;
+    margin-left: 2%;
+}
+.nome1, .nome2 {
+    margin-left: 2%;
+    margin-bottom: 2%;
 }
 footer {
     background-color: rgb(14, 14, 14);
     color: #ffffff;
-    padding: 20px;
+    padding: 2%;
     text-align: center;
 }
 
@@ -190,7 +226,4 @@ footer {
 footer p {
     margin-top: 10px;
     font-size: 14px;
-}
-#sugestao {
-    text-align: left;
 }
