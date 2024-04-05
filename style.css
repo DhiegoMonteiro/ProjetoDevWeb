@@ -17,7 +17,7 @@ header{
 }
 .login-register {
     position: absolute;
-    top: 5.5%;
+    top: 3.8%;
     left: 90%;
     width: 9.6%;
     justify-content: space-between;
@@ -44,7 +44,7 @@ header{
     width: 50%;
     height: 140px;
     margin-top: 0;
-    margin-left: 25%;
+    margin-left: 28%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -58,7 +58,8 @@ header{
     font-size: 1.1em;
     font-weight: 500;
     color: black;
-    position: relative; 
+    position: relative;
+    border: 1px solid;
 }
 
 .navigation a::after {
@@ -88,17 +89,26 @@ main {
     height: auto;
     position: relative;
 }
+#img-busca{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .busca {
+    width: 100%;
+    height: auto;    
+    position: absolute;
+    display:flex;
+    justify-content: center;
+}
+.busca input{
     width: 30%;
     height: auto;
-    margin-left: 34%;
-    margin-top: -14%;
-    position: absolute;
 }
 #MuralReceitaButton {
     width: 100%;
     display: flex;
-    
+
 }
 #MuralReceitaButton button:hover{   
     background-color:  #ff8717;
@@ -133,9 +143,7 @@ main {
             margin-left: 13%;
         }
         .login-register {
-            position: absolute;
-            top: 5.8%;
-            left: 87%;
+            left: 87%;        
             width: 13%;
             height: auto;
             justify-content: space-between;
@@ -155,19 +163,19 @@ main {
             transition: .5s;
         }
         .navigation {
-            font-size: 150%;
-            width: 50%;
+            font-size: 120%;
+            width: 52.5%;
             height: 140px;
             margin-left: 28%;
-            display: flex;
-            flex-wrap: wrap;
+            display: flex;            
+            justify-content: space-around;
         }
         #sugestao{
             border: 2px solid;
             font-size: 2px;
 
         }
-       
+
     }
 #sugestao{
     display: flex;
@@ -266,4 +274,4 @@ footer {
 footer p {
     margin-top: 10px;
     font-size: 14px;
-}
+    }
