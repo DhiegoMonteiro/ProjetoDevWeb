@@ -3,7 +3,6 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #Logo{
@@ -18,9 +17,9 @@ header{
 }
 .login-register {
     position: absolute;
-    top: 4%;
+    top: 5.5%;
     left: 90%;
-    width: 8%;
+    width: 9.6%;
     justify-content: space-between;
 }
 .login-register button{
@@ -41,21 +40,22 @@ header{
     color: white;
 }
 .navigation {
-    font-size: 30px;
-    width: 1000px;
+    font-size: 150%;
+    width: 50%;
     height: 140px;
-    margin-left: 22%;
     margin-top: 0;
+    margin-left: 25%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    position: relative; 
 }
 
 .navigation a {
     margin-top: 1%;
     text-decoration: none;
+    font-size: 1.1em;
     font-weight: 500;
     color: black;
     position: relative; 
@@ -82,7 +82,6 @@ header{
 }
 main {
     background-color: rgb(235, 235, 235);
-    padding-bottom: 2%;
 }
 .imagem-toda{
     width: 100%;
@@ -98,33 +97,78 @@ main {
 }
 #MuralReceitaButton {
     width: 100%;
-    height: auto;
-    margin-top: -1.5%;
-    display: flex;   
+    display: flex;
+    
 }
 #MuralReceitaButton button:hover{   
     background-color:  #ff8717;
-    color: white;
+    color: yellow;
 }
 .mural,
 .receita {
     width: 20%;
-    height: auto;
-    display: inline-block;
     justify-content: space-between;
-    border-top: none;
     margin-left: 20.5%;
     background-color: #ee7300;
-    color: black;
     cursor: pointer;
-    font-size: 38px;
+    font-size: 1.5em;
     border-top: none;
+    color: whitesmoke;
+    margin-top: 0;
 }
-.mural{
+@media screen and (max-width: 768px) {
+    #Logo{
+        width: 20.2%;
+    }
+    .mural, .receita{
+        font-size: 1.2em;
+    }
+        .duasListas{
+            background-color: rgb(235, 235, 235);
+            padding: 0;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-left: 13%;
+        }
+        .login-register {
+            position: absolute;
+            top: 5.8%;
+            left: 87%;
+            width: 13%;
+            height: auto;
+            justify-content: space-between;
+            flex-wrap: column;
+        }
+        .login-register button{
+            width: 100%;
+            border-radius: 50px;
+            background-color:tomato;
+            color: black;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: center;
+            font-size: 0.8em;
+            font-weight: 500;
+            transition: .5s;
+        }
+        .navigation {
+            font-size: 150%;
+            width: 50%;
+            height: 140px;
+            margin-left: 28%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #sugestao{
+            border: 2px solid;
+            font-size: 2px;
 
-}
-.receita {
-}
+        }
+       
+    }
 #sugestao{
     display: flex;
     text-align: center;
@@ -195,11 +239,6 @@ main {
 }
 .descricaoBolo, .descricaoPao{
     margin-top: 0.7%;
-    margin-left: 2%;
-}
-.nome1, .nome2 {
-    margin-left: 2%;
-    margin-bottom: 2%;
 }
 footer {
     background-color: rgb(14, 14, 14);
@@ -211,6 +250,7 @@ footer {
 .footer-links {
     margin-bottom: 10px;
     margin-top: -10px;
+    flex-wrap: wrap;
 }
 
 .footer-links a {
