@@ -1,4 +1,4 @@
-@import url("https://www.w3schools.com/css/css_font.asp");
+@import url("https://fonts.google.com/specimen/Inter");
 *{
     margin:0;
     padding: 0;
@@ -115,6 +115,7 @@ main {
 }
 .mural,
 .receita {
+    border-radius: 5px;
     width: 20%;
     justify-content: space-between;
     margin-left: 20.5%;
@@ -187,7 +188,7 @@ main {
     padding: 0px;
     display: flex;
     flex-direction: column;
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Courier New", monospace;
 }
 #listapao{
      background-color: rgb(235, 235, 235);
@@ -195,7 +196,7 @@ main {
     padding: 0%;
     display: flex;
     flex-direction: column;
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Courier New", monospace;
 
 }
 #listabolo{
@@ -203,7 +204,7 @@ main {
     display: flex;
 }
 #listabolo a{
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
 }
 #listapao{
@@ -211,7 +212,7 @@ main {
     padding: 0;
 }
 #listapao a{
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
 }
 .imgbolo{
