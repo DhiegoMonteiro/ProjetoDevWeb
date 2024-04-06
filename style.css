@@ -18,13 +18,13 @@ header{
 .login-register {
     position: absolute;
     top: 3.8%;
-    left: 90%;
+    left: 87%;
     width: 9.6%;
     justify-content: space-between;
 }
 .login-register button{
     width: 100%;
-    border-radius: 50px;
+    border-radius: 2px;
     background-color:tomato;
     color: black;
     cursor: pointer;
@@ -44,7 +44,7 @@ header{
     width: 50%;
     height: 140px;
     margin-top: 0;
-    margin-left: 28%;
+    margin-left: 24%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -130,7 +130,7 @@ main {
         width: 20.2%;
     }
     .mural, .receita{
-        font-size: 1.2em;
+        font-size: 1em;
     }
         .duasListas{
             background-color: rgb(235, 235, 235);
@@ -142,39 +142,25 @@ main {
             margin-left: 13%;
         }
         .login-register {
-            left: 87%;        
+            left: 85%;        
             width: 13%;
             height: auto;
             justify-content: space-between;
             flex-wrap: column;
         }
         .login-register button{
-            width: 100%;
-            border-radius: 50px;
-            background-color:tomato;
-            color: black;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            display: flex;
-            justify-content: center;
-            font-size: 0.8em;
+            font-size: 0.6em;
             font-weight: 500;
-            transition: .5s;
         }
         .navigation {
             font-size: 120%;
             width: 52.5%;
             height: 140px;
-            margin-left: 28%;
+            margin-left: 25%;
             display: flex;            
             justify-content: space-around;
         }
-        #sugestao{
-            border: 2px solid;
-            font-size: 2px;
-
-        }
-
+       
     }
 #sugestao{
     display: flex;
@@ -184,7 +170,7 @@ main {
     justify-content: center;
     height: 2%;
     text-decoration: underline;
-    font-size: 300%;
+    font-size: 2em;
 }
 .duasListas{
     background-color: rgb(235, 235, 235);
@@ -195,30 +181,34 @@ main {
     justify-content: space-between;
     margin-left: 13%;
 }
-#listabolo, #listapao {
+#listabolo{
     background-color: rgb(235, 235, 235);
-    box-shadow: 0px 10px 8px lightgray;
+    box-shadow: 0px 7px 8px lightgray;
     padding: 0px;
     display: flex;
     flex-direction: column;
     font-family: "Lucida Console", "Courier New", monospace;
 }
-#listabolo{
-    width: 22%;
+#listapao{
+     background-color: rgb(235, 235, 235);
+    box-shadow: 0px 7px 8px lightgray;
+    padding: 0%;
     display: flex;
-    align-items: left;
-    margin-left: 19%;
+    flex-direction: column;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+#listabolo{
+    width: 37%;
+    display: flex;
 }
 #listabolo a{
     text-decoration: underline;
     color: black;
 }
 #listapao{
-    width: 21.5%;
+    width: 37%;
     padding: 0;
-    margin-right: 10%;
-    margin-left: 60%;
-    margin-top: -17.8%;
 }
 #listapao a{
     text-decoration: underline;
@@ -247,6 +237,15 @@ main {
 .descricaoBolo, .descricaoPao{
     margin-top: 0.7%;
 }
+
+.Duaslistas{
+    width: 65%;
+    margin-left: 18%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
 footer {
     background-color: rgb(14, 14, 14);
     color: #ffffff;
@@ -273,4 +272,4 @@ footer {
 footer p {
     margin-top: 10px;
     font-size: 14px;
-    }
+}
